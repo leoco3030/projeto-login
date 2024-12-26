@@ -12,7 +12,7 @@
 }
 
 body, html {
-    background-color: midnightblue;
+    background-color:rebeccapurple;
     height: 100vh;
     width: 100vw;
 }
@@ -24,6 +24,32 @@ main {
 }
 
 section#login {
-    background-color: white;
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.356);
+
+    transition: width 0.4s, height 0.4s;
+    transition-timing-function: ease;
+}
+
+section#login > div#imagem {
+    display: block;
+    background: rebeccapurple url(../imagens/forest.jpg) no-repeat;
+    background-size: cover;
+    background-position: left bottom;
+
+    height: 200px;
+}
+
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
 }
